@@ -1,0 +1,176 @@
+{
+	"BUILD_DIR" : "D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen",
+	"CMAKE_BINARY_DIR" : "D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/QtProject/Memorize_word_tool/Memorize_word_tool",
+	"CMAKE_EXECUTABLE" : "C:/cmake-3.24.0-rc2-windows-x86_64/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"D:/QtProject/Memorize_word_tool/Memorize_word_tool/CMakeLists.txt",
+		"D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/CMakeFiles/3.24.0-rc2/CMakeSystem.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake",
+		"D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/CMakeFiles/3.24.0-rc2/CMakeCXXCompiler.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/Platform/Windows.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/CMakeFindCodeBlocks.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/ProcessorCount.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/Compiler/GNU.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake",
+		"D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/CMakeFiles/3.24.0-rc2/CMakeRCCompiler.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/CMakeRCInformation.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5/Qt5Config.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/CMakeParseArguments.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/CMakeParseArguments.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5/Qt5Config.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Sql/Qt5SqlConfigVersion.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Sql/Qt5SqlConfig.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Sql/Qt5Sql_QMYSQLDriverPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Sql/Qt5Sql_QODBCDriverPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Sql/Qt5Sql_QPSQLDriverPlugin.cmake",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/lib/cmake/Qt5Sql/Qt5Sql_QSQLiteDriverPlugin.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "D:/QtProject/Memorize_word_tool/Memorize_word_tool",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/login.h",
+			"MU",
+			"EWIEGA46WW/moc_login.cpp",
+			null
+		],
+		[
+			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/signup.h",
+			"MU",
+			"EWIEGA46WW/moc_signup.cpp",
+			null
+		],
+		[
+			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/wordslibrary.h",
+			"MU",
+			"EWIEGA46WW/moc_wordslibrary.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/include",
+	"MOC_COMPILATION_FILE" : "D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_SQL_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug",
+		"D:/QtProject/Memorize_word_tool/Memorize_word_tool",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtANGLE",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/mkspecs/win32-g++",
+		"C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql",
+		"C:/Qt/Qt5.9.9/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include",
+		"C:/Qt/Qt5.9.9/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed",
+		"C:/Qt/Qt5.9.9/Tools/mingw530_32/i686-w64-mingw32/include",
+		"C:/Qt/Qt5.9.9/Tools/mingw530_32/i686-w64-mingw32/include/c++",
+		"C:/Qt/Qt5.9.9/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32",
+		"C:/Qt/Qt5.9.9/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"C:/Qt/Qt5.9.9/Tools/mingw530_32/bin/g++.exe",
+		"-dM",
+		"-E",
+		"-c",
+		"C:/cmake-3.24.0-rc2-windows-x86_64/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/CMakeFiles/Memorize_word_tool_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "C:/Qt/Qt5.9.9/5.9.9/mingw53_32/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "C:/Qt/Qt5.9.9/5.9.9/mingw53_32/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 9,
+	"SETTINGS_FILE" : "D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/CMakeFiles/Memorize_word_tool_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/login.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/signup.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/wordslibrary.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

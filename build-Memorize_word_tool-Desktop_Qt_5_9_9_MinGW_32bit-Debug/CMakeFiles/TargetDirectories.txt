@@ -1,0 +1,4 @@
+D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/CMakeFiles/Memorize_word_tool.dir
+D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/CMakeFiles/edit_cache.dir
+D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/CMakeFiles/Memorize_word_tool_autogen.dir

@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+e352b62530f9020f3bdb09cb862deb90 CMakeFiles/Memorize_word_tool_autogen
