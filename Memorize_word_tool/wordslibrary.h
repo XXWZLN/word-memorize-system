@@ -24,11 +24,16 @@ public:
 private slots:
     void on_signOut_clicked();
 
+    void on_add_clicked();
+
+    void on_Delete_clicked();
+
 private:
     Ui::wordslibrary *ui;
     QSqlDatabase database;
     QSqlQuery sql_query;
     QSqlTableModel *model;
+    QString sign_in_account;
 };
 
 #endif // WORDSLIBRARY_H

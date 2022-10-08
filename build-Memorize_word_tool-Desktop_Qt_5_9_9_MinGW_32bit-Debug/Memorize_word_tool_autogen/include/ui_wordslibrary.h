@@ -25,6 +25,8 @@ class Ui_wordslibrary
 public:
     QPushButton *signOut;
     QTableView *tableView;
+    QPushButton *add;
+    QPushButton *Delete;
 
     void setupUi(QWidget *wordslibrary)
     {
@@ -37,6 +39,12 @@ public:
         tableView = new QTableView(wordslibrary);
         tableView->setObjectName(QStringLiteral("tableView"));
         tableView->setGeometry(QRect(40, 40, 441, 331));
+        add = new QPushButton(wordslibrary);
+        add->setObjectName(QStringLiteral("add"));
+        add->setGeometry(QRect(560, 100, 112, 34));
+        Delete = new QPushButton(wordslibrary);
+        Delete->setObjectName(QStringLiteral("Delete"));
+        Delete->setGeometry(QRect(560, 160, 112, 34));
 
         retranslateUi(wordslibrary);
 
@@ -47,6 +55,8 @@ public:
     {
         wordslibrary->setWindowTitle(QApplication::translate("wordslibrary", "Form", Q_NULLPTR));
         signOut->setText(QApplication::translate("wordslibrary", "Sign Out", Q_NULLPTR));
+        add->setText(QApplication::translate("wordslibrary", "Add word", Q_NULLPTR));
+        Delete->setText(QApplication::translate("wordslibrary", "Delete", Q_NULLPTR));
     } // retranslateUi
 
 };
