@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>765</width>
-    <height>480</height>
+    <width>856</width>
+    <height>544</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="signOut">
    <property name="geometry">
     <rect>
-     <x>560</x>
-     <y>40</y>
+     <x>660</x>
+     <y>60</y>
      <width>112</width>
      <height>34</height>
     </rect>
@@ -30,8 +30,8 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>40</y>
-     <width>441</width>
+     <y>110</y>
+     <width>581</width>
      <height>331</height>
     </rect>
    </property>
@@ -39,8 +39,8 @@
   <widget class="QPushButton" name="add">
    <property name="geometry">
     <rect>
-     <x>560</x>
-     <y>100</y>
+     <x>660</x>
+     <y>120</y>
      <width>112</width>
      <height>34</height>
     </rect>
@@ -52,8 +52,8 @@
   <widget class="QPushButton" name="Delete">
    <property name="geometry">
     <rect>
-     <x>560</x>
-     <y>160</y>
+     <x>660</x>
+     <y>180</y>
      <width>112</width>
      <height>34</height>
     </rect>
@@ -65,25 +65,68 @@
   <widget class="QPushButton" name="search">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>230</y>
+     <x>650</x>
+     <y>250</y>
      <width>112</width>
      <height>34</height>
     </rect>
    </property>
    <property name="text">
-    <string>search</string>
+    <string>Memorize</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="search_word">
    <property name="geometry">
     <rect>
-     <x>530</x>
-     <y>310</y>
+     <x>630</x>
+     <y>330</y>
      <width>181</width>
      <height>25</height>
     </rect>
    </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>380</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Import</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>70</y>
+     <width>121</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>单词顺序</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>单词逆序</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>记忆度顺序</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>记忆度逆序</string>
+    </property>
+   </item>
   </widget>
  </widget>
  <resources/>

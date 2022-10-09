@@ -213,6 +213,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+memory.obj: memory.cpp.obj
+.PHONY : memory.obj
+
+# target to build an object file
+memory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/memory.cpp.obj
+.PHONY : memory.cpp.obj
+
+memory.i: memory.cpp.i
+.PHONY : memory.i
+
+# target to preprocess a source file
+memory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/memory.cpp.i
+.PHONY : memory.cpp.i
+
+memory.s: memory.cpp.s
+.PHONY : memory.s
+
+# target to generate assembly for a file
+memory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/memory.cpp.s
+.PHONY : memory.cpp.s
+
 signup.obj: signup.cpp.obj
 .PHONY : signup.obj
 
@@ -280,6 +304,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... memory.obj
+	@echo ... memory.i
+	@echo ... memory.s
 	@echo ... signup.obj
 	@echo ... signup.i
 	@echo ... signup.s

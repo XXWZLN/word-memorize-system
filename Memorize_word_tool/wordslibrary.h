@@ -30,6 +30,10 @@ private slots:
 
     void on_search_word_textChanged(const QString &arg1);
 
+    void on_comboBox_currentIndexChanged(const QString &arg1);
+
+
+
 private:
     Ui::wordslibrary *ui;
     QSqlDatabase database;

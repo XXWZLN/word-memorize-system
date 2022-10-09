@@ -130,6 +130,15 @@
 		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/main.cpp">
 			<Option target="Memorize_word_tool"/>
 		</Unit>
+		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/memory.cpp">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
+		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/memory.h">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
+		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/memory.ui">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
 		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/signup.cpp">
 			<Option target="Memorize_word_tool"/>
 		</Unit>
@@ -149,6 +158,9 @@
 			<Option target="Memorize_word_tool"/>
 		</Unit>
 		<Unit filename="D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/include/ui_login.h">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
+		<Unit filename="D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/include/ui_memory.h">
 			<Option target="Memorize_word_tool"/>
 		</Unit>
 		<Unit filename="D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/include/ui_signup.h">

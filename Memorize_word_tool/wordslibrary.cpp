@@ -40,7 +40,7 @@ void wordslibrary::on_signOut_clicked()
 
 void wordslibrary::on_add_clicked()
 {
-    QString insert = QString("insert into '%1' values (null,null)").arg(sign_in_account);
+    QString insert = QString("insert into '%1' values (null,null,1)").arg(sign_in_account);
     sql_query.exec(insert);
     model->select();
 }
@@ -61,7 +61,7 @@ void wordslibrary::on_search_word_textChanged(const QString &arg1)
     for(int i = 0; i < ui->tableView->model()->rowCount(); i++)
     {
         ui->tableView->setRowHidden(i,true);
-        for(int j = 0; j < ui->tableView->model()->columnCount(); j++)
+        for(int j = 0; j < ui->tableView->model()->columnCount() - 1; j++)
         {
             data = QString("");
             auto index = ui->tableView->model()->index(i,j);
@@ -71,5 +71,25 @@ void wordslibrary::on_search_word_textChanged(const QString &arg1)
                 ui->tableView->setRowHidden(i,false);
         }
     }
-
 }
+
+
+void wordslibrary::on_comboBox_currentIndexChanged(const QString &arg1)
+{
+    auto index = ui->comboBox->currentIndex();
+    switch (index) {
+        case 0:
+            ui->tableView->sortByColumn(0,Qt::AscendingOrder);
+            break;
+        case 1:
+            ui->tableView->sortByColumn(0,Qt::DescendingOrder);
+            break;
+        case 2:
+            ui->tableView->sortByColumn(2,Qt::AscendingOrder);
+            break;
+        case 3:
+            ui->tableView->sortByColumn(2,Qt::DescendingOrder);
+            break;
+    }
+}
+

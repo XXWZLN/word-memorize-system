@@ -50,7 +50,7 @@ bool login::sign_in_check(QString account_input, QString password_input)
         return false;
     }
     qDebug() << QString("no such account");
-    return  false;
+    return false;
 }
 
 void login::on_signIn_clicked()

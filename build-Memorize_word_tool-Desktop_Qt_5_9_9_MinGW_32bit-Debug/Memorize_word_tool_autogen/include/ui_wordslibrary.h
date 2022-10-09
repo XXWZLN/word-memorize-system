@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
@@ -30,30 +31,38 @@ public:
     QPushButton *Delete;
     QPushButton *search;
     QLineEdit *search_word;
+    QPushButton *pushButton;
+    QComboBox *comboBox;
 
     void setupUi(QWidget *wordslibrary)
     {
         if (wordslibrary->objectName().isEmpty())
             wordslibrary->setObjectName(QStringLiteral("wordslibrary"));
-        wordslibrary->resize(765, 480);
+        wordslibrary->resize(856, 544);
         signOut = new QPushButton(wordslibrary);
         signOut->setObjectName(QStringLiteral("signOut"));
-        signOut->setGeometry(QRect(560, 40, 112, 34));
+        signOut->setGeometry(QRect(660, 60, 112, 34));
         tableView = new QTableView(wordslibrary);
         tableView->setObjectName(QStringLiteral("tableView"));
-        tableView->setGeometry(QRect(40, 40, 441, 331));
+        tableView->setGeometry(QRect(40, 110, 581, 331));
         add = new QPushButton(wordslibrary);
         add->setObjectName(QStringLiteral("add"));
-        add->setGeometry(QRect(560, 100, 112, 34));
+        add->setGeometry(QRect(660, 120, 112, 34));
         Delete = new QPushButton(wordslibrary);
         Delete->setObjectName(QStringLiteral("Delete"));
-        Delete->setGeometry(QRect(560, 160, 112, 34));
+        Delete->setGeometry(QRect(660, 180, 112, 34));
         search = new QPushButton(wordslibrary);
         search->setObjectName(QStringLiteral("search"));
-        search->setGeometry(QRect(550, 230, 112, 34));
+        search->setGeometry(QRect(650, 250, 112, 34));
         search_word = new QLineEdit(wordslibrary);
         search_word->setObjectName(QStringLiteral("search_word"));
-        search_word->setGeometry(QRect(530, 310, 181, 25));
+        search_word->setGeometry(QRect(630, 330, 181, 25));
+        pushButton = new QPushButton(wordslibrary);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(660, 380, 112, 34));
+        comboBox = new QComboBox(wordslibrary);
+        comboBox->setObjectName(QStringLiteral("comboBox"));
+        comboBox->setGeometry(QRect(70, 70, 121, 24));
 
         retranslateUi(wordslibrary);
 
@@ -66,7 +75,15 @@ public:
         signOut->setText(QApplication::translate("wordslibrary", "Sign Out", Q_NULLPTR));
         add->setText(QApplication::translate("wordslibrary", "Add word", Q_NULLPTR));
         Delete->setText(QApplication::translate("wordslibrary", "Delete", Q_NULLPTR));
-        search->setText(QApplication::translate("wordslibrary", "search", Q_NULLPTR));
+        search->setText(QApplication::translate("wordslibrary", "Memorize", Q_NULLPTR));
+        pushButton->setText(QApplication::translate("wordslibrary", "Import", Q_NULLPTR));
+        comboBox->clear();
+        comboBox->insertItems(0, QStringList()
+         << QApplication::translate("wordslibrary", "\345\215\225\350\257\215\351\241\272\345\272\217", Q_NULLPTR)
+         << QApplication::translate("wordslibrary", "\345\215\225\350\257\215\351\200\206\345\272\217", Q_NULLPTR)
+         << QApplication::translate("wordslibrary", "\350\256\260\345\277\206\345\272\246\351\241\272\345\272\217", Q_NULLPTR)
+         << QApplication::translate("wordslibrary", "\350\256\260\345\277\206\345\272\246\351\200\206\345\272\217", Q_NULLPTR)
+        );
     } // retranslateUi
 
 };

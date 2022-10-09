@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Memorize_word_tool.dir/login.cpp.obj.d"
   "CMakeFiles/Memorize_word_tool.dir/main.cpp.obj"
   "CMakeFiles/Memorize_word_tool.dir/main.cpp.obj.d"
+  "CMakeFiles/Memorize_word_tool.dir/memory.cpp.obj"
+  "CMakeFiles/Memorize_word_tool.dir/memory.cpp.obj.d"
   "CMakeFiles/Memorize_word_tool.dir/signup.cpp.obj"
   "CMakeFiles/Memorize_word_tool.dir/signup.cpp.obj.d"
   "CMakeFiles/Memorize_word_tool.dir/wordslibrary.cpp.obj"

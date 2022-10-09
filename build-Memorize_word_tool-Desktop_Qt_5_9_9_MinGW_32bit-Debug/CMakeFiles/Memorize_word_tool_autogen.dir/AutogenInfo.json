@@ -82,6 +82,12 @@
 			null
 		],
 		[
+			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/memory.h",
+			"MU",
+			"EWIEGA46WW/moc_memory.cpp",
+			null
+		],
+		[
 			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/signup.h",
 			"MU",
 			"EWIEGA46WW/moc_signup.cpp",
@@ -154,6 +160,11 @@
 		],
 		[
 			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/memory.cpp",
 			"MU",
 			null
 		],

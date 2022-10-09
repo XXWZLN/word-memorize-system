@@ -12,3 +12,7 @@ D:/QtProject/Memorize_word_tool/Memorize_word_tool/signup.cpp
  uic:ui_signup.h
 D:/QtProject/Memorize_word_tool/Memorize_word_tool/wordslibrary.cpp
  uic:ui_wordslibrary.h
+D:/QtProject/Memorize_word_tool/Memorize_word_tool/memory.h
+ mmc:Q_OBJECT
+D:/QtProject/Memorize_word_tool/Memorize_word_tool/memory.cpp
+ uic:ui_memory.h

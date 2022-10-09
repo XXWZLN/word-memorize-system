@@ -46,6 +46,9 @@ else()
     signup.cpp
     signup.h
     signup.ui
+    memory.cpp
+    memory.h
+    memory.ui
   )
 endif()
 

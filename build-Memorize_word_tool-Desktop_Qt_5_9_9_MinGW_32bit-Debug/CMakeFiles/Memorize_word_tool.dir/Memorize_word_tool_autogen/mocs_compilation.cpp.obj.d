@@ -334,6 +334,8 @@ CMakeFiles/Memorize_word_tool.dir/Memorize_word_tool_autogen/mocs_compilation.cp
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
  D:/QtProject/Memorize_word_tool/Memorize_word_tool/signup.h \
  D:/QtProject/Memorize_word_tool/Memorize_word_tool/login.h \
+ D:\QtProject\Memorize_word_tool\build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug\Memorize_word_tool_autogen\EWIEGA46WW/moc_memory.cpp \
+ D:/QtProject/Memorize_word_tool/Memorize_word_tool/memory.h \
  D:\QtProject\Memorize_word_tool\build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug\Memorize_word_tool_autogen\EWIEGA46WW/moc_signup.cpp \
  D:/QtProject/Memorize_word_tool/Memorize_word_tool/signup.h \
  D:\QtProject\Memorize_word_tool\build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug\Memorize_word_tool_autogen\EWIEGA46WW/moc_wordslibrary.cpp \
