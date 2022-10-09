@@ -48,11 +48,28 @@ void wordslibrary::on_add_clicked()
 void wordslibrary::on_Delete_clicked()
 {
     auto index = ui->tableView->currentIndex();
-//    int row = index.row();
-//    int column = index.column();
     QVariant data = index.data();
     QString select = QString("delete from %1 where word = '%2'").arg(sign_in_account).arg(data.toString());
-    qDebug() << select;
     sql_query.exec(select);
     model->select();
+}
+
+void wordslibrary::on_search_word_textChanged(const QString &arg1)
+{
+    QString text = ui->search_word->text();
+    QString data = QString("");
+    for(int i = 0; i < ui->tableView->model()->rowCount(); i++)
+    {
+        ui->tableView->setRowHidden(i,true);
+        for(int j = 0; j < ui->tableView->model()->columnCount(); j++)
+        {
+            data = QString("");
+            auto index = ui->tableView->model()->index(i,j);
+            data = ui->tableView->model()->data(index).toString();
+            qDebug() << data;
+            if(data.contains(text, Qt::CaseSensitive))
+                ui->tableView->setRowHidden(i,false);
+        }
+    }
+
 }

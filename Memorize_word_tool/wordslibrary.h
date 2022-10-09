@@ -28,6 +28,8 @@ private slots:
 
     void on_Delete_clicked();
 
+    void on_search_word_textChanged(const QString &arg1);
+
 private:
     Ui::wordslibrary *ui;
     QSqlDatabase database;

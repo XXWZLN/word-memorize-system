@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTableView>
 #include <QtWidgets/QWidget>
@@ -27,12 +28,14 @@ public:
     QTableView *tableView;
     QPushButton *add;
     QPushButton *Delete;
+    QPushButton *search;
+    QLineEdit *search_word;
 
     void setupUi(QWidget *wordslibrary)
     {
         if (wordslibrary->objectName().isEmpty())
             wordslibrary->setObjectName(QStringLiteral("wordslibrary"));
-        wordslibrary->resize(688, 480);
+        wordslibrary->resize(765, 480);
         signOut = new QPushButton(wordslibrary);
         signOut->setObjectName(QStringLiteral("signOut"));
         signOut->setGeometry(QRect(560, 40, 112, 34));
@@ -45,6 +48,12 @@ public:
         Delete = new QPushButton(wordslibrary);
         Delete->setObjectName(QStringLiteral("Delete"));
         Delete->setGeometry(QRect(560, 160, 112, 34));
+        search = new QPushButton(wordslibrary);
+        search->setObjectName(QStringLiteral("search"));
+        search->setGeometry(QRect(550, 230, 112, 34));
+        search_word = new QLineEdit(wordslibrary);
+        search_word->setObjectName(QStringLiteral("search_word"));
+        search_word->setGeometry(QRect(530, 310, 181, 25));
 
         retranslateUi(wordslibrary);
 
@@ -57,6 +66,7 @@ public:
         signOut->setText(QApplication::translate("wordslibrary", "Sign Out", Q_NULLPTR));
         add->setText(QApplication::translate("wordslibrary", "Add word", Q_NULLPTR));
         Delete->setText(QApplication::translate("wordslibrary", "Delete", Q_NULLPTR));
+        search->setText(QApplication::translate("wordslibrary", "search", Q_NULLPTR));
     } // retranslateUi
 
 };
