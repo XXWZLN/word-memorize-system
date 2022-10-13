@@ -29,9 +29,9 @@ public:
     QTableView *tableView;
     QPushButton *add;
     QPushButton *Delete;
-    QPushButton *search;
+    QPushButton *memory;
     QLineEdit *search_word;
-    QPushButton *pushButton;
+    QPushButton *Import;
     QComboBox *comboBox;
 
     void setupUi(QWidget *wordslibrary)
@@ -51,15 +51,15 @@ public:
         Delete = new QPushButton(wordslibrary);
         Delete->setObjectName(QStringLiteral("Delete"));
         Delete->setGeometry(QRect(660, 180, 112, 34));
-        search = new QPushButton(wordslibrary);
-        search->setObjectName(QStringLiteral("search"));
-        search->setGeometry(QRect(650, 250, 112, 34));
+        memory = new QPushButton(wordslibrary);
+        memory->setObjectName(QStringLiteral("memory"));
+        memory->setGeometry(QRect(650, 250, 112, 34));
         search_word = new QLineEdit(wordslibrary);
         search_word->setObjectName(QStringLiteral("search_word"));
         search_word->setGeometry(QRect(630, 330, 181, 25));
-        pushButton = new QPushButton(wordslibrary);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(660, 380, 112, 34));
+        Import = new QPushButton(wordslibrary);
+        Import->setObjectName(QStringLiteral("Import"));
+        Import->setGeometry(QRect(660, 380, 112, 34));
         comboBox = new QComboBox(wordslibrary);
         comboBox->setObjectName(QStringLiteral("comboBox"));
         comboBox->setGeometry(QRect(70, 70, 121, 24));
@@ -75,8 +75,8 @@ public:
         signOut->setText(QApplication::translate("wordslibrary", "Sign Out", Q_NULLPTR));
         add->setText(QApplication::translate("wordslibrary", "Add word", Q_NULLPTR));
         Delete->setText(QApplication::translate("wordslibrary", "Delete", Q_NULLPTR));
-        search->setText(QApplication::translate("wordslibrary", "Memorize", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("wordslibrary", "Import", Q_NULLPTR));
+        memory->setText(QApplication::translate("wordslibrary", "Memorize", Q_NULLPTR));
+        Import->setText(QApplication::translate("wordslibrary", "Import", Q_NULLPTR));
         comboBox->clear();
         comboBox->insertItems(0, QStringList()
          << QApplication::translate("wordslibrary", "\345\215\225\350\257\215\351\241\272\345\272\217", Q_NULLPTR)

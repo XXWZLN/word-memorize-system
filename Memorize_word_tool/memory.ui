@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>802</width>
+    <height>604</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="back">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>210</y>
+     <x>340</x>
+     <y>490</y>
      <width>112</width>
      <height>34</height>
     </rect>

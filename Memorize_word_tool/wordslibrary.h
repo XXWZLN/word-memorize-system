@@ -7,6 +7,8 @@
 #include <QSqlQuery>
 #include <QDebug>
 #include <QSqlTableModel>
+#include "login.h"
+#include "memory.h"
 
 namespace Ui {
 class wordslibrary;
@@ -32,7 +34,9 @@ private slots:
 
     void on_comboBox_currentIndexChanged(const QString &arg1);
 
+    void on_Import_clicked();
 
+    void on_memory_clicked();
 
 private:
     Ui::wordslibrary *ui;

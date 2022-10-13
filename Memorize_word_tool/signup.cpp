@@ -33,5 +33,15 @@ void signUp::on_pushButton_clicked()
                                  wordTags INT               \
                                  );"
                                ).arg(account);
-    sql_query.exec(initTable);
+    if(sql_query.exec(initTable))
+    {
+        this->close();
+        wordslibrary *Wordslibrary = new wordslibrary();
+        Wordslibrary->sqlInit(account);
+        Wordslibrary->show();
+    }
+    else{
+        qDebug() << "account init error";
+    }
+
 }

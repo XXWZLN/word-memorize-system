@@ -1,6 +1,6 @@
 #include "wordslibrary.h"
 #include "ui_wordslibrary.h"
-#include "login.h"
+
 
 wordslibrary::wordslibrary(QWidget *parent) :
     QWidget(parent),
@@ -93,3 +93,20 @@ void wordslibrary::on_comboBox_currentIndexChanged(const QString &arg1)
     }
 }
 
+
+void wordslibrary::on_Import_clicked()
+{
+    QString import = QString("insert into %1 select * from hello").arg(sign_in_account);
+    sql_query.exec(import);
+    model->select();
+}
+
+
+
+void wordslibrary::on_memory_clicked()
+{
+    this->close();
+    memory *Memory = new memory();
+    Memory->memorize_tool_init(sign_in_account);
+    Memory->show();
+}

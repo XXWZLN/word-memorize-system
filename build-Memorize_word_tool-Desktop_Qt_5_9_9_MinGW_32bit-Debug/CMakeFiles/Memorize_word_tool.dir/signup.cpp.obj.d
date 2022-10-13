@@ -332,6 +332,7 @@ CMakeFiles/Memorize_word_tool.dir/signup.cpp.obj: \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqltablemodel.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqlquerymodel.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
+ D:\QtProject\Memorize_word_tool\Memorize_word_tool\memory.h \
  D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/include/ui_signup.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QVariant \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qvariant.h \
@@ -364,6 +365,8 @@ CMakeFiles/Memorize_word_tool.dir/signup.cpp.obj: \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qstyle.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtabbar.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qrubberband.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QLabel \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qlabel.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QLineEdit \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qlineedit.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qtextcursor.h \

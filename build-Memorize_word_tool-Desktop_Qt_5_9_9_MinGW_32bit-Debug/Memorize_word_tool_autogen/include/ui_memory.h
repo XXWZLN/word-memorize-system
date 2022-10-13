@@ -28,10 +28,10 @@ public:
     {
         if (memory->objectName().isEmpty())
             memory->setObjectName(QStringLiteral("memory"));
-        memory->resize(400, 300);
+        memory->resize(802, 604);
         back = new QPushButton(memory);
         back->setObjectName(QStringLiteral("back"));
-        back->setGeometry(QRect(140, 210, 112, 34));
+        back->setGeometry(QRect(340, 490, 112, 34));
 
         retranslateUi(memory);
 

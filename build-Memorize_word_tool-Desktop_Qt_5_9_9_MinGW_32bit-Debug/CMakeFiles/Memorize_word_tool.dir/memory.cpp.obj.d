@@ -303,17 +303,41 @@ CMakeFiles/Memorize_word_tool.dir/memory.cpp.obj: \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qsizepolicy.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qcursor.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qkeysequence.h \
- D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/include/ui_memory.h \
- C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QVariant \
- C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qvariant.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlDatabase \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqldatabase.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qtsqlglobal.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlError \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqlerror.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlQuery \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqlquery.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqldatabase.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QDebug \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qdebug.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qmap.h \
  C:/Qt/Qt5.9.9/Tools/mingw530_32/i686-w64-mingw32/include/c++/functional \
  C:/Qt/Qt5.9.9/Tools/mingw530_32/i686-w64-mingw32/include/c++/typeinfo \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qtextstream.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qlocale.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qvariant.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qset.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qcontiguouscache.h \
+ D:\QtProject\Memorize_word_tool\Memorize_word_tool\wordslibrary.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlTableModel \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqltablemodel.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqlquerymodel.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
+ D:\QtProject\Memorize_word_tool\Memorize_word_tool\login.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QMainWindow \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qmainwindow.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qwidget.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtabwidget.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qicon.h \
+ D:\QtProject\Memorize_word_tool\Memorize_word_tool\signup.h \
+ D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/include/ui_memory.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QVariant \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qvariant.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QAction \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qaction.h \
- C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qwidget.h \
- C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qvariant.h \
- C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qicon.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qactiongroup.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qaction.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QApplication \
@@ -323,7 +347,6 @@ CMakeFiles/Memorize_word_tool.dir/memory.cpp.obj: \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qeventloop.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qguiapplication.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qinputmethod.h \
- C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qlocale.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QButtonGroup \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qbuttongroup.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QHeaderView \
@@ -331,9 +354,7 @@ CMakeFiles/Memorize_word_tool.dir/memory.cpp.obj: \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractitemview.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qframe.h \
- C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qitemselectionmodel.h \
- C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qset.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qstyleoption.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractspinbox.h \
@@ -343,7 +364,6 @@ CMakeFiles/Memorize_word_tool.dir/memory.cpp.obj: \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractslider.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qstyle.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtabbar.h \
- C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtabwidget.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qrubberband.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QPushButton \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qpushbutton.h \

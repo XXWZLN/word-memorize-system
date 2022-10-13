@@ -12,3 +12,16 @@ memory::~memory()
 {
     delete ui;
 }
+
+void memory::memorize_tool_init(QString account)
+{
+    sign_in_account = account;
+}
+
+void memory::on_back_clicked()
+{
+    this->close();
+    wordslibrary *Wordslibrary = new wordslibrary();
+    Wordslibrary->sqlInit(sign_in_account);
+    Wordslibrary->show();
+}

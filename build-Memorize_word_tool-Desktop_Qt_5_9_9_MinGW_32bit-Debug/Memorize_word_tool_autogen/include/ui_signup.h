@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
@@ -26,6 +27,8 @@ public:
     QPushButton *pushButton;
     QLineEdit *account;
     QLineEdit *password;
+    QLabel *label;
+    QLabel *label_2;
 
     void setupUi(QWidget *signUp)
     {
@@ -37,10 +40,16 @@ public:
         pushButton->setGeometry(QRect(120, 210, 112, 34));
         account = new QLineEdit(signUp);
         account->setObjectName(QStringLiteral("account"));
-        account->setGeometry(QRect(120, 60, 113, 25));
+        account->setGeometry(QRect(160, 60, 113, 25));
         password = new QLineEdit(signUp);
         password->setObjectName(QStringLiteral("password"));
-        password->setGeometry(QRect(120, 110, 113, 25));
+        password->setGeometry(QRect(160, 110, 113, 25));
+        label = new QLabel(signUp);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(40, 60, 81, 18));
+        label_2 = new QLabel(signUp);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(40, 110, 81, 18));
 
         retranslateUi(signUp);
 
@@ -51,6 +60,8 @@ public:
     {
         signUp->setWindowTitle(QApplication::translate("signUp", "Form", Q_NULLPTR));
         pushButton->setText(QApplication::translate("signUp", "Sign Up", Q_NULLPTR));
+        label->setText(QApplication::translate("signUp", "account", Q_NULLPTR));
+        label_2->setText(QApplication::translate("signUp", "password", Q_NULLPTR));
     } // retranslateUi
 
 };
