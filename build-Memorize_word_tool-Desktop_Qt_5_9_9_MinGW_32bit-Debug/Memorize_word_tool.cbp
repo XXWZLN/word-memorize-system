@@ -118,6 +118,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/c2e.cpp">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
+		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/c2e.h">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
+		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/c2e.ui">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
+		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/e2c.cpp">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
+		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/e2c.h">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
+		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/e2c.ui">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
 		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/login.cpp">
 			<Option target="Memorize_word_tool"/>
 		</Unit>
@@ -155,6 +173,12 @@
 			<Option target="Memorize_word_tool"/>
 		</Unit>
 		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/wordslibrary.ui">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
+		<Unit filename="D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/include/ui_c2e.h">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
+		<Unit filename="D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/include/ui_e2c.h">
 			<Option target="Memorize_word_tool"/>
 		</Unit>
 		<Unit filename="D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/include/ui_login.h">

@@ -49,6 +49,12 @@ else()
     memory.cpp
     memory.h
     memory.ui
+    c2e.cpp
+    c2e.h
+    c2e.ui
+    e2c.cpp
+    e2c.h
+    e2c.ui
   )
 endif()
 

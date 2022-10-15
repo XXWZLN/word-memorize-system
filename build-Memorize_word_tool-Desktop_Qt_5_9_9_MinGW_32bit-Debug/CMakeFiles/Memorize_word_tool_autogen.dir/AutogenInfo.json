@@ -76,6 +76,18 @@
 	"HEADERS" : 
 	[
 		[
+			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/c2e.h",
+			"MU",
+			"EWIEGA46WW/moc_c2e.cpp",
+			null
+		],
+		[
+			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/e2c.h",
+			"MU",
+			"EWIEGA46WW/moc_e2c.cpp",
+			null
+		],
+		[
 			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/login.h",
 			"MU",
 			"EWIEGA46WW/moc_login.cpp",
@@ -153,6 +165,16 @@
 	"SETTINGS_FILE" : "D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/CMakeFiles/Memorize_word_tool_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/c2e.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/e2c.cpp",
+			"MU",
+			null
+		],
 		[
 			"D:/QtProject/Memorize_word_tool/Memorize_word_tool/login.cpp",
 			"MU",

@@ -165,6 +165,54 @@ Memorize_word_tool_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/Memorize_word_tool_autogen/mocs_compilation.cpp.s
 .PHONY : Memorize_word_tool_autogen/mocs_compilation.cpp.s
 
+c2e.obj: c2e.cpp.obj
+.PHONY : c2e.obj
+
+# target to build an object file
+c2e.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/c2e.cpp.obj
+.PHONY : c2e.cpp.obj
+
+c2e.i: c2e.cpp.i
+.PHONY : c2e.i
+
+# target to preprocess a source file
+c2e.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/c2e.cpp.i
+.PHONY : c2e.cpp.i
+
+c2e.s: c2e.cpp.s
+.PHONY : c2e.s
+
+# target to generate assembly for a file
+c2e.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/c2e.cpp.s
+.PHONY : c2e.cpp.s
+
+e2c.obj: e2c.cpp.obj
+.PHONY : e2c.obj
+
+# target to build an object file
+e2c.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/e2c.cpp.obj
+.PHONY : e2c.cpp.obj
+
+e2c.i: e2c.cpp.i
+.PHONY : e2c.i
+
+# target to preprocess a source file
+e2c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/e2c.cpp.i
+.PHONY : e2c.cpp.i
+
+e2c.s: e2c.cpp.s
+.PHONY : e2c.s
+
+# target to generate assembly for a file
+e2c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/e2c.cpp.s
+.PHONY : e2c.cpp.s
+
 login.obj: login.cpp.obj
 .PHONY : login.obj
 
@@ -298,6 +346,12 @@ help:
 	@echo ... Memorize_word_tool_autogen/mocs_compilation.obj
 	@echo ... Memorize_word_tool_autogen/mocs_compilation.i
 	@echo ... Memorize_word_tool_autogen/mocs_compilation.s
+	@echo ... c2e.obj
+	@echo ... c2e.i
+	@echo ... c2e.s
+	@echo ... e2c.obj
+	@echo ... e2c.i
+	@echo ... e2c.s
 	@echo ... login.obj
 	@echo ... login.i
 	@echo ... login.s

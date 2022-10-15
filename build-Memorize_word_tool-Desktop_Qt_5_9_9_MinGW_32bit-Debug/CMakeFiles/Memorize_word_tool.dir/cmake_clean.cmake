@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Memorize_word_tool.dir/Memorize_word_tool_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/Memorize_word_tool.dir/Memorize_word_tool_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/Memorize_word_tool.dir/c2e.cpp.obj"
+  "CMakeFiles/Memorize_word_tool.dir/c2e.cpp.obj.d"
+  "CMakeFiles/Memorize_word_tool.dir/e2c.cpp.obj"
+  "CMakeFiles/Memorize_word_tool.dir/e2c.cpp.obj.d"
   "CMakeFiles/Memorize_word_tool.dir/login.cpp.obj"
   "CMakeFiles/Memorize_word_tool.dir/login.cpp.obj.d"
   "CMakeFiles/Memorize_word_tool.dir/main.cpp.obj"

@@ -7,6 +7,8 @@
 #include <QSqlQuery>
 #include <QDebug>
 #include "wordslibrary.h"
+#include "e2c.h"
+#include "c2e.h"
 
 namespace Ui {
 class memory;
@@ -23,6 +25,8 @@ public:
 
 private slots:
     void on_back_clicked();
+
+    void on_pushButton_5_clicked();
 
 private:
     Ui::memory *ui;
