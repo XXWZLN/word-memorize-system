@@ -285,6 +285,30 @@ memory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/memory.cpp.s
 .PHONY : memory.cpp.s
 
+mysqltablemodel.obj: mysqltablemodel.cpp.obj
+.PHONY : mysqltablemodel.obj
+
+# target to build an object file
+mysqltablemodel.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/mysqltablemodel.cpp.obj
+.PHONY : mysqltablemodel.cpp.obj
+
+mysqltablemodel.i: mysqltablemodel.cpp.i
+.PHONY : mysqltablemodel.i
+
+# target to preprocess a source file
+mysqltablemodel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/mysqltablemodel.cpp.i
+.PHONY : mysqltablemodel.cpp.i
+
+mysqltablemodel.s: mysqltablemodel.cpp.s
+.PHONY : mysqltablemodel.s
+
+# target to generate assembly for a file
+mysqltablemodel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Memorize_word_tool.dir\build.make CMakeFiles/Memorize_word_tool.dir/mysqltablemodel.cpp.s
+.PHONY : mysqltablemodel.cpp.s
+
 signup.obj: signup.cpp.obj
 .PHONY : signup.obj
 
@@ -361,6 +385,9 @@ help:
 	@echo ... memory.obj
 	@echo ... memory.i
 	@echo ... memory.s
+	@echo ... mysqltablemodel.obj
+	@echo ... mysqltablemodel.i
+	@echo ... mysqltablemodel.s
 	@echo ... signup.obj
 	@echo ... signup.i
 	@echo ... signup.s

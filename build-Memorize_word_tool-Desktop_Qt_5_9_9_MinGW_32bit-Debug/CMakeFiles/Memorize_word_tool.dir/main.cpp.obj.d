@@ -333,7 +333,10 @@ CMakeFiles/Memorize_word_tool.dir/main.cpp.obj: \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qabstractitemmodel.h \
  D:\QtProject\Memorize_word_tool\Memorize_word_tool\memory.h \
  D:\QtProject\Memorize_word_tool\Memorize_word_tool\e2c.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QVector \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qvector.h \
  D:\QtProject\Memorize_word_tool\Memorize_word_tool\c2e.h \
+ D:\QtProject\Memorize_word_tool\Memorize_word_tool\mysqltablemodel.h \
  D:\QtProject\Memorize_word_tool\Memorize_word_tool\signup.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QApplication \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qapplication.h \

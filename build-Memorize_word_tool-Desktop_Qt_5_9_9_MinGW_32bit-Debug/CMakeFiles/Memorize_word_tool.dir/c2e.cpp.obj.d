@@ -334,7 +334,10 @@ CMakeFiles/Memorize_word_tool.dir/c2e.cpp.obj: \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtabwidget.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qicon.h \
  D:\QtProject\Memorize_word_tool\Memorize_word_tool\signup.h \
+ D:\QtProject\Memorize_word_tool\Memorize_word_tool\mysqltablemodel.h \
  D:\QtProject\Memorize_word_tool\Memorize_word_tool\e2c.h \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QVector \
+ C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qvector.h \
  D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/include/ui_c2e.h \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QVariant \
  C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/qvariant.h \

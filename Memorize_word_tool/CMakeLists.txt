@@ -55,6 +55,8 @@ else()
     e2c.cpp
     e2c.h
     e2c.ui
+    mysqltablemodel.cpp
+    mysqltablemodel.h
   )
 endif()
 

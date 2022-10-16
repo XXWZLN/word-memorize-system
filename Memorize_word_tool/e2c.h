@@ -9,16 +9,27 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+#include <QVector>
 #include "memory.h"
 
-#define level1 0.6
-#define level2 0.3
-#define level3 0.05
-#define level4 0.05
+#define level0 0.25
+#define level1 0.25
+#define level2 0.2
+#define level3 0.2
+#define level4 0.1
 
 namespace Ui {
 class e2c;
 }
+
+typedef struct {
+    int key;
+    int elem;
+}item;
+
+
+
+
 
 class e2c : public QWidget
 {
@@ -28,8 +39,13 @@ public:
     explicit e2c(QWidget *parent = nullptr);
     void e2cInit(QString account, int _words_num);
     int level_num(int level);
+    //void level_num_all(QVector<item>& lnv);
+    //void vector_order(QVector<item> &level_num);
+    void level_num_all();
+    void level_num_config();
     int level_select();
     int word_select(int level);
+
     ~e2c();
 
 private slots:
@@ -41,12 +57,13 @@ private:
     QSqlDatabase database;
     QSqlQuery sql_query;
     int words_num;
-    int remb_level_1;
-    int remb_level_2;
-    int remb_level_3;
-    int remb_level_4;
+    int remb_level_expect[6];
+    int remb_level[6];
+    int remb_practice_minus_expect[6];
     int word_index;
     //int remb_level;
+    item tem;
+    //QVector<item> level_num_vector;
 };
 
 #endif // E2C_H

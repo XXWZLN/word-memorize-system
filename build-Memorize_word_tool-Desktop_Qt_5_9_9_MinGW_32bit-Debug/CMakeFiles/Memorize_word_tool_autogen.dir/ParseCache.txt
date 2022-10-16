@@ -8,6 +8,7 @@ D:/QtProject/Memorize_word_tool/Memorize_word_tool/wordslibrary.h
  mmc:Q_OBJECT
 D:/QtProject/Memorize_word_tool/Memorize_word_tool/login.cpp
  uic:./ui_login.h
+D:/QtProject/Memorize_word_tool/Memorize_word_tool/mysqltablemodel.h
 D:/QtProject/Memorize_word_tool/Memorize_word_tool/signup.cpp
  uic:ui_signup.h
 D:/QtProject/Memorize_word_tool/Memorize_word_tool/wordslibrary.cpp
@@ -24,3 +25,4 @@ D:/QtProject/Memorize_word_tool/Memorize_word_tool/c2e.cpp
  uic:ui_c2e.h
 D:/QtProject/Memorize_word_tool/Memorize_word_tool/e2c.cpp
  uic:ui_e2c.h
+D:/QtProject/Memorize_word_tool/Memorize_word_tool/mysqltablemodel.cpp

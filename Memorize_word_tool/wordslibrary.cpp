@@ -25,10 +25,14 @@ void wordslibrary::sqlInit(QString account)
     }
     sql_query = QSqlQuery(database);
     model = new QSqlTableModel(this, database);
-    model->setTable(account);
+    model->setTable(sign_in_account);
     model->setEditStrategy(QSqlTableModel::OnFieldChange);
-    ui->tableView->setModel(model);
-    model->select();
+    mymodel = new MySqlTableModel(this,database);
+    mymodel->setTable(sign_in_account);
+    mymodel->setEditStrategy(QSqlTableModel::OnFieldChange);
+    ui->tableView->setModel(mymodel);
+    myselect = QString("select word,meaning,wordTags from %1").arg(sign_in_account);
+    mymodel->MySelect(myselect);
 }
 
 void wordslibrary::on_signOut_clicked()
@@ -40,9 +44,9 @@ void wordslibrary::on_signOut_clicked()
 
 void wordslibrary::on_add_clicked()
 {
-    QString insert = QString("insert into '%1' values (null,null,1)").arg(sign_in_account);
+    QString insert = QString("insert into '%1' values (null,null,1,null,null)").arg(sign_in_account);
     sql_query.exec(insert);
-    model->select();
+    mymodel->MySelect(myselect);
 }
 
 void wordslibrary::on_Delete_clicked()
@@ -51,7 +55,7 @@ void wordslibrary::on_Delete_clicked()
     QVariant data = index.data();
     QString select = QString("delete from %1 where word = '%2'").arg(sign_in_account).arg(data.toString());
     sql_query.exec(select);
-    model->select();
+    mymodel->MySelect(myselect);
 }
 
 void wordslibrary::on_search_word_textChanged(const QString &arg1)
@@ -98,7 +102,7 @@ void wordslibrary::on_Import_clicked()
 {
     QString import = QString("insert into %1 select * from hello").arg(sign_in_account);
     sql_query.exec(import);
-    model->select();
+    mymodel->MySelect(myselect);
 }
 
 

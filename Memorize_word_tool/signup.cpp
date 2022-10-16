@@ -30,7 +30,9 @@ void signUp::on_pushButton_clicked()
     QString initTable = QString("CREATE TABLE [%1] (        \
                                  word    TEXT,              \
                                  meaning TEXT,              \
-                                 wordTags INT               \
+                                 wordTags INT,              \
+                                 tag1    TEXT,              \
+                                 tag2    TEXT               \
                                  );"
                                ).arg(account);
     if(sql_query.exec(initTable))

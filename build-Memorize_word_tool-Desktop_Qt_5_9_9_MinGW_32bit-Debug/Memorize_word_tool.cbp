@@ -157,6 +157,12 @@
 		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/memory.ui">
 			<Option target="Memorize_word_tool"/>
 		</Unit>
+		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/mysqltablemodel.cpp">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
+		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/mysqltablemodel.h">
+			<Option target="Memorize_word_tool"/>
+		</Unit>
 		<Unit filename="D:/QtProject/Memorize_word_tool/Memorize_word_tool/signup.cpp">
 			<Option target="Memorize_word_tool"/>
 		</Unit>

@@ -9,6 +9,7 @@
 #include <QSqlTableModel>
 #include "login.h"
 #include "memory.h"
+#include "mysqltablemodel.h"
 
 namespace Ui {
 class wordslibrary;
@@ -44,6 +45,8 @@ private:
     QSqlQuery sql_query;
     QSqlTableModel *model;
     QString sign_in_account;
+    MySqlTableModel *mymodel;
+    QString myselect;
 };
 
 #endif // WORDSLIBRARY_H
