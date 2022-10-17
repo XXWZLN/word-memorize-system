@@ -26,7 +26,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt5 COMPONENTS Sql REQUIRED)
+#include_directories(C:\\python3.9_x32\\include)
+#link_directories(C:\\python3.9_x32\\libs)
 
+include_directories(C:\\Anaconda\\envs\\nltk_py39_x32\\include)
+link_directories(C:\\Anaconda\\envs\\nltk_py39_x32\\libs)
+
+#link_libraries("C:/Anaconda/envs/nltk/libs/python37.lib")
+#C:\\Anaconda\\envs\\nltk_py37_x32\\include
 if(ANDROID)
   add_library(Memorize_word_tool SHARED
     main.cpp
@@ -60,4 +67,5 @@ else()
   )
 endif()
 
-target_link_libraries(Memorize_word_tool PRIVATE Qt5::Widgets Qt5::Sql)
+target_link_libraries(Memorize_word_tool PRIVATE Qt5::Widgets Qt5::Sql python39.lib)
+

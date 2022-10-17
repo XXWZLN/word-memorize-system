@@ -395,6 +395,13 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_STRIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Python
+FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[C:/Anaconda/python.exe][cfound components: Interpreter ][v3.9.12()]
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+//Path to a program.
+_Python_EXECUTABLE:INTERNAL=C:/Anaconda/python.exe
+//Python Properties
+_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;12;32;;cp39-win_amd64;C:\Anaconda\Lib;C:\Anaconda\Lib;C:\Anaconda\Lib\site-packages;C:\Anaconda\Lib\site-packages
+_Python_INTERPRETER_SIGNATURE:INTERNAL=57e8d8cd8f9999c9ceb870146e8957d5
 

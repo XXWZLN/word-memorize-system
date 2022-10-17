@@ -1,6 +1,7 @@
 #ifndef E2C_H
 #define E2C_H
 
+#include <Python.h>
 #include <QWidget>
 #include <QSqlDatabase>
 #include <QSqlError>

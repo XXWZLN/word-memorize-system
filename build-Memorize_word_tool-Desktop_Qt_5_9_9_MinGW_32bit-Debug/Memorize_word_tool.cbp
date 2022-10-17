@@ -31,6 +31,7 @@
 					<Add directory="D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug"/>
 					<Add directory="D:/QtProject/Memorize_word_tool/Memorize_word_tool"/>
 					<Add directory="D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/include"/>
+					<Add directory="C:/Anaconda/envs/nltk_py39_x32/include"/>
 					<Add directory="C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include"/>
 					<Add directory="C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets"/>
 					<Add directory="C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui"/>
@@ -66,6 +67,7 @@
 					<Add directory="D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug"/>
 					<Add directory="D:/QtProject/Memorize_word_tool/Memorize_word_tool"/>
 					<Add directory="D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug/Memorize_word_tool_autogen/include"/>
+					<Add directory="C:/Anaconda/envs/nltk_py39_x32/include"/>
 					<Add directory="C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include"/>
 					<Add directory="C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets"/>
 					<Add directory="C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui"/>

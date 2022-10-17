@@ -195,14 +195,34 @@ void e2c::on_back_clicked()
 //    wordslibrary *Wordslibrary = new wordslibrary();
 //    Wordslibrary->sqlInit(sign_in_account);
 //    Wordslibrary->show();
-    int l;
-    level_num_all();
-    level_num_config();
-    l = level_select();
-    while(!word_select(l))
-    {
-        l = level_select();
-    }
+
+
+
+//    int l;
+//    level_num_all();
+//    level_num_config();
+//    l = level_select();
+//    while(!word_select(l))
+//    {
+//        l = level_select();
+//    }
+    Py_SetPythonHome(L"C:\\Anaconda\\envs\\nltk");
+    Py_Initialize();
+    PyRun_SimpleString("import sys");
+
+    PyRun_SimpleString("sys.path.append('D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug')");
+    PyRun_SimpleString("print(sys.path)");
+    PyObject* pModule = PyImport_ImportModule("sayHello");
+    PyObject* pFunc = PyObject_GetAttrString(pModule, "say");
+    PyObject* pargs = PyTuple_New(1);
+    PyTuple_SetItem(pargs, 0, Py_BuildValue("i", 100));
+    PyObject* ans = PyObject_CallObject(pFunc, pargs);
+    long ans_c = PyLong_AsLong(ans);
+    qDebug() << ans_c;
+    Py_Finalize();
+
+
+
 }
 
 
