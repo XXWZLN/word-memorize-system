@@ -206,10 +206,11 @@ void e2c::on_back_clicked()
 //    {
 //        l = level_select();
 //    }
+
+
     Py_SetPythonHome(L"C:\\Anaconda\\envs\\nltk");
     Py_Initialize();
     PyRun_SimpleString("import sys");
-
     PyRun_SimpleString("sys.path.append('D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug')");
     PyRun_SimpleString("print(sys.path)");
     PyObject* pModule = PyImport_ImportModule("sayHello");
