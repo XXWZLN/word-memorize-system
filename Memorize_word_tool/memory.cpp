@@ -18,7 +18,7 @@ void memory::memorize_tool_init(QString account)
     sign_in_account = account;
     ui->me_num->setSuffix("个");
     ui->me_num->setSingleStep(10);
-    ui->me_num->setValue(40);
+    ui->me_num->setValue(30);
     ui->me_num->setMinimum(10);
 }
 

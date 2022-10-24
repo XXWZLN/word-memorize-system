@@ -13,6 +13,7 @@
 #include <QVector>
 #include "memory.h"
 
+
 #define level0 0.25
 #define level1 0.25
 #define level2 0.2
@@ -46,7 +47,7 @@ public:
     void level_num_config();
     int level_select();
     int word_select(int level);
-
+    void words_init(QString word);
     ~e2c();
 
 private slots:
@@ -65,6 +66,8 @@ private:
     //int remb_level;
     item tem;
     //QVector<item> level_num_vector;
+    int cishu;
+    QString word_now;
 };
 
 #endif // E2C_H

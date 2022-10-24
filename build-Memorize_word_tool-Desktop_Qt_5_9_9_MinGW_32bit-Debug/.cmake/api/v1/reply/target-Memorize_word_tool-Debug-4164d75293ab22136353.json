@@ -135,7 +135,7 @@
 				},
 				{
 					"backtrace" : 10,
-					"path" : "C:/Anaconda/envs/nltk_py39_x32/include"
+					"path" : "C:/Anaconda/envs/nltk_x32/include"
 				},
 				{
 					"backtrace" : 3,
@@ -218,7 +218,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-LC:\\Anaconda\\envs\\nltk_py39_x32\\libs",
+				"fragment" : "-LC:\\Anaconda\\envs\\nltk_x32\\libs",
 				"role" : "libraryPath"
 			},
 			{

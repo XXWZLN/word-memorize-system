@@ -25,7 +25,7 @@ void e2c::e2cInit(QString account, int _words_num)
     {
         qDebug()<<"error";
     }
-
+    cishu = 0;
     sql_query = QSqlQuery(database);
 
 }
@@ -155,10 +155,10 @@ int e2c::word_select(int level)
     while(sql_query.next())
     {
         row++;
-        qDebug()<<sql_query.value(0);
+        //qDebug()<<sql_query.value(0);
 
     }
-    qDebug() << "next";
+    //qDebug() << "next";
     if(row == 0)
         return 0;
     row = rand() % row;
@@ -167,12 +167,30 @@ int e2c::word_select(int level)
     {
         sql_query.next();
     }
-    qDebug()<<sql_query.value(0).toString();
+    //qDebug()<<sql_query.value(0).toString();
+    //words_init(sql_query.value(0).toString());
+    word_now = sql_query.value(0).toString();
     order = QString("update %1 set chosen = 1 where word = '%2'").arg(sign_in_account).arg(sql_query.value(0).toString());
     sql_query.exec(order);
     remb_level[level]--;
     words_num--;
     return 1;
+}
+
+void e2c::words_init(QString word)
+{
+    QString subOrder = QString("select * from %1 where word='%2'").arg(sign_in_account).arg(word);
+    sql_query.exec(subOrder);
+    sql_query.first();
+    QString w1 = sql_query.value(4).toString();
+    QString w2 = sql_query.value(5).toString();
+    QString w3 = sql_query.value(6).toString();
+    ui->label->setText(word);
+    ui->c1->setText(w1);
+    ui->c2->setText(w2);
+    ui->c3->setText(w3);
+    cishu++;
+    qDebug () << cishu;
 }
 
 e2c::~e2c()
@@ -198,29 +216,30 @@ void e2c::on_back_clicked()
 
 
 
-//    int l;
-//    level_num_all();
-//    level_num_config();
-//    l = level_select();
-//    while(!word_select(l))
-//    {
-//        l = level_select();
-//    }
+    int l;
+    level_num_all();
+    level_num_config();
+    l = level_select();
+    while(!word_select(l))
+    {
+        l = level_select();
+    }
+    words_init(word_now);
+    //words_init()
 
-
-    Py_SetPythonHome(L"C:\\Anaconda\\envs\\nltk");
-    Py_Initialize();
-    PyRun_SimpleString("import sys");
-    PyRun_SimpleString("sys.path.append('D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug')");
-    PyRun_SimpleString("print(sys.path)");
-    PyObject* pModule = PyImport_ImportModule("sayHello");
-    PyObject* pFunc = PyObject_GetAttrString(pModule, "say");
-    PyObject* pargs = PyTuple_New(1);
-    PyTuple_SetItem(pargs, 0, Py_BuildValue("i", 100));
-    PyObject* ans = PyObject_CallObject(pFunc, pargs);
-    long ans_c = PyLong_AsLong(ans);
-    qDebug() << ans_c;
-    Py_Finalize();
+//    Py_SetPythonHome(L"C:\\Anaconda\\envs\\nltk_x32");
+//    Py_Initialize();
+//    PyRun_SimpleString("import sys");
+//    PyRun_SimpleString("sys.path.append('D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug')");
+//    PyRun_SimpleString("print(sys.path)");
+//    PyObject* pModule = PyImport_ImportModule("sayHello");
+//    PyObject* pFunc = PyObject_GetAttrString(pModule, "say");
+//    PyObject* pargs = PyTuple_New(1);
+//    PyTuple_SetItem(pargs, 0, Py_BuildValue("i", 100));
+//    PyObject* ans = PyObject_CallObject(pFunc, pargs);
+//    long ans_c = PyLong_AsLong(ans);
+//    qDebug() << ans_c;
+//    Py_Finalize();
 
 
 

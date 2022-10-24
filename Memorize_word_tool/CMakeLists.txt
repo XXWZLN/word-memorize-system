@@ -29,8 +29,8 @@ find_package(Qt5 COMPONENTS Sql REQUIRED)
 #include_directories(C:\\python3.9_x32\\include)
 #link_directories(C:\\python3.9_x32\\libs)
 
-include_directories(C:\\Anaconda\\envs\\nltk_py39_x32\\include)
-link_directories(C:\\Anaconda\\envs\\nltk_py39_x32\\libs)
+include_directories(C:\\Anaconda\\envs\\nltk_x32\\include)
+link_directories(C:\\Anaconda\\envs\\nltk_x32\\libs)
 
 #link_libraries("C:/Anaconda/envs/nltk/libs/python37.lib")
 #C:\\Anaconda\\envs\\nltk_py37_x32\\include
