@@ -155,7 +155,7 @@ int e2c::word_select(int level)
 {
     if(level == -1)
     {
-        qDebug() << "背完了";
+        finish();
         return 2;
     }
     QString order = QString("select * from %1 where wordTags = %2 and chosen = 0").arg(sign_in_account).arg(level);
@@ -189,6 +189,7 @@ int e2c::word_select(int level)
 
 void e2c::words_init(QString word)
 {
+    right_or_not = 1;
     ui->label->setText(word);
     QString subOrder = QString("select * from %1 where word='%2'").arg(sign_in_account).arg(word);
     sql_query.exec(subOrder);
@@ -230,6 +231,7 @@ void e2c::judgement(int n, int ans, int right_or_not)
         QString order = QString ("update %1 set rem_num=rem_num+1,all_num=all_num+1 where word='%2'").arg(sign_in_account).arg(word_now);
         sql_query.exec(order);
         ui->error->setText("");
+
         int l;
         l = level_select();
         while(!word_select(l))
@@ -237,16 +239,12 @@ void e2c::judgement(int n, int ans, int right_or_not)
             l = level_select();
         }
         words_init(word_now);
-    }
-    else if (n != ans) {
-        ui->error->setText("错了");
-        right_or_not = 0;
     }
     else if (n == ans && right_or_not == 0){
         QString order = QString ("update %1 set all_num=all_num+1 where word='%2'").arg(sign_in_account).arg(word_now);
         sql_query.exec(order);
         ui->error->setText("");
-        right_or_not = 1;
+
         int l;
         l = level_select();
         while(!word_select(l))
@@ -255,6 +253,21 @@ void e2c::judgement(int n, int ans, int right_or_not)
         }
         words_init(word_now);
         }
+    else if (n != ans) {
+        ui->error->setText("错了");
+    }
+
+}
+
+void e2c::finish()
+{
+    ui->c1->hide();
+    ui->c2->hide();
+    ui->c3->hide();
+    ui->c4->hide();
+    QString order = QString ("update %1 set chosen=0").arg (sign_in_account);
+    sql_query.exec(order);
+
 }
 
 e2c::~e2c()
@@ -285,14 +298,10 @@ void e2c::on_back_clicked()
 //    level_num_config();
 
 
-    int l;
-    l = level_select();
-    while(!word_select(l))
-    {
-        l = level_select();
-    }
-    words_init(word_now);
-
+    this->close();
+    memory *Memory = new memory();
+    Memory->memorize_tool_init(sign_in_account);
+    Memory->show();
 
 
     //words_init()

@@ -49,6 +49,7 @@ public:
     int word_select(int level);
     void words_init(QString word);
     void judgement(int n, int ans, int right_or_not);
+    void finish ();
     ~e2c();
 
 private slots:
