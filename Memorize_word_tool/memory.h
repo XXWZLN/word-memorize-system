@@ -28,6 +28,8 @@ private slots:
 
     void on_pushButton_5_clicked();
 
+    void on_c2e_clicked();
+
 private:
     Ui::memory *ui;
     QSqlDatabase database;

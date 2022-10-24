@@ -40,3 +40,12 @@ void memory::on_pushButton_5_clicked()
     E2C->e2cInit(sign_in_account, ui->me_num->value());
     E2C->show();
 }
+
+void memory::on_c2e_clicked()
+{
+    this->close();
+    qDebug() << ui->me_num->value();
+    c2e *C2e = new c2e();
+    C2e->c2eInit(sign_in_account, ui->me_num->value());
+    C2e->show();
+}
