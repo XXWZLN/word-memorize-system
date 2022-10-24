@@ -226,12 +226,19 @@ void e2c::words_init(QString word)
 
 void e2c::judgement(int n, int ans, int right_or_not)
 {
+    QString order = QString ("select * from %1 where word='%2'").arg (sign_in_account).arg (word_now);
+    QSqlQuery theQueue;
+    theQueue.exec(order);
+    theQueue.first();
     if (n == ans && right_or_not == 1) {
         //"update %1 set rem_num = rem_num + 1 all_num = all_num + 1 where word = '%2'"
         QString order = QString ("update %1 set rem_num=rem_num+1,all_num=all_num+1 where word='%2'").arg(sign_in_account).arg(word_now);
         sql_query.exec(order);
         ui->error->setText("");
-
+        if (theQueue.value(2) < 3) {
+            order = QString ("update %1 set wordTags=2 where word='%2'").arg (sign_in_account).arg (word_now);
+            theQueue.exec(order);
+        }
         int l;
         l = level_select();
         while(!word_select(l))
@@ -255,6 +262,10 @@ void e2c::judgement(int n, int ans, int right_or_not)
         }
     else if (n != ans) {
         ui->error->setText("错了");
+        if (theQueue.value(2) < 3) {
+            order = QString ("update %1 set wordTags=1 where word='%2'").arg (sign_in_account).arg (word_now);
+            theQueue.exec(order);
+        }
     }
 
 }
@@ -265,9 +276,32 @@ void e2c::finish()
     ui->c2->hide();
     ui->c3->hide();
     ui->c4->hide();
-    QString order = QString ("update %1 set chosen=0").arg (sign_in_account);
+    QString order = QString("update %1 set chosen=0").arg (sign_in_account);
     sql_query.exec(order);
-
+    order = QString("select * from %1").arg(sign_in_account);
+    sql_query.exec(order);
+    while (sql_query.next())
+    {
+        float r = sql_query.value(7).toFloat();
+        float a = sql_query.value(8).toFloat();
+        if (sql_query.value(8) > 2) {
+            if (r/a >= 0.8) {
+                QString subOrder = QString("update %1 set wordTags=5 where word='%2'").arg(sign_in_account).arg(sql_query.value(0).toString());
+                QSqlQuery sub_query;
+                sub_query.exec(subOrder);
+            }
+            else if (r/a >= 0.6 && r/a < 0.8) {
+                QString subOrder = QString("update %1 set wordTags=4 where word='%2'").arg(sign_in_account).arg(sql_query.value(0).toString());
+                QSqlQuery sub_query;
+                sub_query.exec(subOrder);
+            }
+            else if (r/a < 0.6) {
+                QString subOrder = QString("update %1 set wordTags=3 where word='%2'").arg(sign_in_account).arg(sql_query.value(0).toString());
+                QSqlQuery sub_query;
+                sub_query.exec(subOrder);
+            }
+        }
+    }
 }
 
 e2c::~e2c()
@@ -277,86 +311,11 @@ e2c::~e2c()
 
 void e2c::on_back_clicked()
 {
-//    for(auto &x : remb_level_expect)
-//        qDebug() << x;
-//    level_num_all();
-//    for(auto &x : remb_level)
-//        qDebug() << x;
-//    level_num_config();
-//    for(auto &x : remb_level)
-//        qDebug() << x;
-
-//    this->close();
-//    wordslibrary *Wordslibrary = new wordslibrary();
-//    Wordslibrary->sqlInit(sign_in_account);
-//    Wordslibrary->show();
-
-
-
-//    int l;
-//    level_num_all();
-//    level_num_config();
-
-
     this->close();
     memory *Memory = new memory();
     Memory->memorize_tool_init(sign_in_account);
     Memory->show();
-
-
-    //words_init()
-
-//    Py_SetPythonHome(L"C:\\Anaconda\\envs\\nltk_x32");
-//    Py_Initialize();
-//    PyRun_SimpleString("import sys");
-//    PyRun_SimpleString("sys.path.append('D:/QtProject/Memorize_word_tool/build-Memorize_word_tool-Desktop_Qt_5_9_9_MinGW_32bit-Debug')");
-//    PyRun_SimpleString("print(sys.path)");
-//    PyObject* pModule = PyImport_ImportModule("sayHello");
-//    PyObject* pFunc = PyObject_GetAttrString(pModule, "say");
-//    PyObject* pargs = PyTuple_New(1);
-//    PyTuple_SetItem(pargs, 0, Py_BuildValue("i", 100));
-//    PyObject* ans = PyObject_CallObject(pFunc, pargs);
-//    long ans_c = PyLong_AsLong(ans);
-//    qDebug() << ans_c;
-//    Py_Finalize();
 }
-
-
-
-
-
-
-
-
-
-
-
-//void e2c::level_num_all(QVector<item>& lnv)
-//{
-//    for(int i = 0; i < 6; i++)
-//    {
-//        tem.key = i;
-//        tem.elem = level_num(i);
-//        lnv.append(tem);
-//    }
-//}
-
-//void e2c::vector_order(QVector<item> &level_num)
-//{
-//    for(int i = 0; i < level_num.size() - 1; i++)
-//    {
-//        for(int j = 0; j <level_num.size() - 1 - i ; j++)
-//            if(level_num[j].elem > level_num[j + 1].elem)
-//            {
-//                tem.elem = level_num[j].elem;
-//                tem.key = level_num[j].key;
-//                level_num[j].elem = level_num[j + 1].elem;
-//                level_num[j].key = level_num[j + 1].key;
-//                level_num[j + 1].key = tem.key;
-//                level_num[j + 1].elem = tem.elem;
-//            }
-//    }
-//}
 
 void e2c::on_c1_clicked()
 {
