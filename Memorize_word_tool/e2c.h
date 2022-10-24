@@ -48,10 +48,19 @@ public:
     int level_select();
     int word_select(int level);
     void words_init(QString word);
+    void judgement(int n, int ans, int right_or_not);
     ~e2c();
 
 private slots:
     void on_back_clicked();
+
+    void on_c1_clicked();
+
+    void on_c2_clicked();
+
+    void on_c3_clicked();
+
+    void on_c4_clicked();
 
 private:
     Ui::e2c *ui;
@@ -68,6 +77,8 @@ private:
     //QVector<item> level_num_vector;
     int cishu;
     QString word_now;
+    int ans_index;
+    int right_or_not;
 };
 
 #endif // E2C_H

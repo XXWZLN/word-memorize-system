@@ -19,6 +19,7 @@ void e2c::e2cInit(QString account, int _words_num)
     remb_level_expect[4] = words_num - remb_level_expect[0] - remb_level_expect[1] - remb_level_expect[2] - remb_level_expect[3];
     remb_level_expect[5] = 0;
     sign_in_account = account;
+    ui->error->setText("");
     database = QSqlDatabase::addDatabase("QSQLITE");
     database.setDatabaseName(QApplication::applicationDirPath() + "/data.db");
     if(!database.open())
@@ -27,7 +28,16 @@ void e2c::e2cInit(QString account, int _words_num)
     }
     cishu = 0;
     sql_query = QSqlQuery(database);
-
+    int l;
+    right_or_not = 1;
+    level_num_all();
+    level_num_config();
+    l = level_select();
+    while(!word_select(l))
+    {
+        l = level_select();
+    }
+    words_init(word_now);
 }
 
 int e2c::level_num(int level)
@@ -179,18 +189,72 @@ int e2c::word_select(int level)
 
 void e2c::words_init(QString word)
 {
+    ui->label->setText(word);
     QString subOrder = QString("select * from %1 where word='%2'").arg(sign_in_account).arg(word);
     sql_query.exec(subOrder);
     sql_query.first();
-    QString w1 = sql_query.value(4).toString();
-    QString w2 = sql_query.value(5).toString();
-    QString w3 = sql_query.value(6).toString();
-    ui->label->setText(word);
-    ui->c1->setText(w1);
-    ui->c2->setText(w2);
-    ui->c3->setText(w3);
+    QString wa = sql_query.value(1).toString();
+    QString order1 = QString("select meaning from %1 where word='%2'").arg(sign_in_account).arg(sql_query.value(4).toString());
+    QString order2 = QString("select meaning from %1 where word='%2'").arg(sign_in_account).arg(sql_query.value(5).toString());
+    QString order3 = QString("select meaning from %1 where word='%2'").arg(sign_in_account).arg(sql_query.value(6).toString());
+    sql_query.exec(order1);
+    sql_query.first();
+    QString w1 = sql_query.value(0).toString();
+    sql_query.exec(order2);
+    sql_query.first();
+    QString w2 = sql_query.value(0).toString();
+    sql_query.exec(order3);
+    sql_query.first();
+    QString w3 = sql_query.value(0).toString();
+    QVector<QString> words;
+    words.append(wa);
+    words.append(w1);
+    words.append(w2);
+    words.append(w3);
+    ans_index = rand() % 4;
+    auto tmp = words[0];
+    words[0] = words[ans_index];
+    words[ans_index] = tmp;
+    ui->c1->setText(words[0]);
+    ui->c2->setText(words[1]);
+    ui->c3->setText(words[2]);
+    ui->c4->setText(words[3]);
     cishu++;
     qDebug () << cishu;
+}
+
+void e2c::judgement(int n, int ans, int right_or_not)
+{
+    if (n == ans && right_or_not == 1) {
+        //"update %1 set rem_num = rem_num + 1 all_num = all_num + 1 where word = '%2'"
+        QString order = QString ("update %1 set rem_num=rem_num+1,all_num=all_num+1 where word='%2'").arg(sign_in_account).arg(word_now);
+        sql_query.exec(order);
+        ui->error->setText("");
+        int l;
+        l = level_select();
+        while(!word_select(l))
+        {
+            l = level_select();
+        }
+        words_init(word_now);
+    }
+    else if (n != ans) {
+        ui->error->setText("错了");
+        right_or_not = 0;
+    }
+    else if (n == ans && right_or_not == 0){
+        QString order = QString ("update %1 set all_num=all_num+1 where word='%2'").arg(sign_in_account).arg(word_now);
+        sql_query.exec(order);
+        ui->error->setText("");
+        right_or_not = 1;
+        int l;
+        l = level_select();
+        while(!word_select(l))
+        {
+            l = level_select();
+        }
+        words_init(word_now);
+        }
 }
 
 e2c::~e2c()
@@ -216,15 +280,21 @@ void e2c::on_back_clicked()
 
 
 
+//    int l;
+//    level_num_all();
+//    level_num_config();
+
+
     int l;
-    level_num_all();
-    level_num_config();
     l = level_select();
     while(!word_select(l))
     {
         l = level_select();
     }
     words_init(word_now);
+
+
+
     //words_init()
 
 //    Py_SetPythonHome(L"C:\\Anaconda\\envs\\nltk_x32");
@@ -240,9 +310,6 @@ void e2c::on_back_clicked()
 //    long ans_c = PyLong_AsLong(ans);
 //    qDebug() << ans_c;
 //    Py_Finalize();
-
-
-
 }
 
 
@@ -281,3 +348,27 @@ void e2c::on_back_clicked()
 //            }
 //    }
 //}
+
+void e2c::on_c1_clicked()
+{
+    if (0 != ans_index) right_or_not = 0;
+    judgement(0, ans_index, right_or_not);
+}
+
+void e2c::on_c2_clicked()
+{
+    if (1 != ans_index) right_or_not = 0;
+    judgement(1, ans_index, right_or_not);
+}
+
+void e2c::on_c3_clicked()
+{
+    if (2 != ans_index) right_or_not = 0;
+    judgement(2, ans_index, right_or_not);
+}
+
+void e2c::on_c4_clicked()
+{
+    if (3 != ans_index) right_or_not = 0;
+    judgement(3, ans_index, right_or_not);
+}

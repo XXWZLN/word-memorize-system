@@ -28,6 +28,8 @@ public:
     QPushButton *c1;
     QPushButton *c2;
     QPushButton *c3;
+    QPushButton *c4;
+    QLabel *error;
 
     void setupUi(QWidget *e2c)
     {
@@ -49,6 +51,12 @@ public:
         c3 = new QPushButton(e2c);
         c3->setObjectName(QStringLiteral("c3"));
         c3->setGeometry(QRect(120, 310, 112, 34));
+        c4 = new QPushButton(e2c);
+        c4->setObjectName(QStringLiteral("c4"));
+        c4->setGeometry(QRect(120, 370, 112, 34));
+        error = new QLabel(e2c);
+        error->setObjectName(QStringLiteral("error"));
+        error->setGeometry(QRect(270, 120, 81, 18));
 
         retranslateUi(e2c);
 
@@ -63,6 +71,8 @@ public:
         c1->setText(QApplication::translate("e2c", "PushButton", Q_NULLPTR));
         c2->setText(QApplication::translate("e2c", "PushButton", Q_NULLPTR));
         c3->setText(QApplication::translate("e2c", "PushButton", Q_NULLPTR));
+        c4->setText(QApplication::translate("e2c", "PushButton", Q_NULLPTR));
+        error->setText(QApplication::translate("e2c", "TextLabel", Q_NULLPTR));
     } // retranslateUi
 
 };
