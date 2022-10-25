@@ -35,6 +35,7 @@ private:
     QSqlDatabase database;
     QSqlQuery sql_query;
     QString sign_in_account;
+    int row;
 };
 
 #endif // MEMORY_H

@@ -187,17 +187,17 @@ int c2e::word_select(int level)
 void c2e::words_init(QString word)
 {
     right_or_not = 1;
-    QString subOrder = QString("select * from %1 where word='%2'").arg(sign_in_account).arg(word);
+    QString subOrder = QString("select * from dictionary where word='%1'").arg(word);
     sql_query.exec(subOrder);
     sql_query.first();
     ui->label->setText(sql_query.value(1).toString());
     QString wa = sql_query.value(0).toString();
 
-    QString w1 = sql_query.value(4).toString();
+    QString w1 = sql_query.value(2).toString();
 
-    QString w2 = sql_query.value(5).toString();
+    QString w2 = sql_query.value(3).toString();
 
-    QString w3 = sql_query.value(6).toString();
+    QString w3 = sql_query.value(4).toString();
     QVector<QString> words;
     words.append(word);
     words.append(w1);
@@ -218,7 +218,7 @@ void c2e::words_init(QString word)
 void c2e::judgement(int n, int ans, int right_or_not)
 {
     QString order = QString ("select * from %1 where word='%2'").arg (sign_in_account).arg (word_now);
-    QSqlQuery theQueue;
+    QSqlQuery theQueue(database);
     theQueue.exec(order);
     theQueue.first();
     if (n == ans && right_or_not == 1) {
@@ -277,17 +277,17 @@ void c2e::finish()
         if (sql_query.value(8) > 2) {
             if (r/a >= 0.8) {
                 QString subOrder = QString("update %1 set wordTags=5 where word='%2'").arg(sign_in_account).arg(sql_query.value(0).toString());
-                QSqlQuery sub_query;
+                QSqlQuery sub_query(database);
                 sub_query.exec(subOrder);
             }
             else if (r/a >= 0.6 && r/a < 0.8) {
                 QString subOrder = QString("update %1 set wordTags=4 where word='%2'").arg(sign_in_account).arg(sql_query.value(0).toString());
-                QSqlQuery sub_query;
+                QSqlQuery sub_query(database);
                 sub_query.exec(subOrder);
             }
             else if (r/a < 0.6) {
                 QString subOrder = QString("update %1 set wordTags=3 where word='%2'").arg(sign_in_account).arg(sql_query.value(0).toString());
-                QSqlQuery sub_query;
+                QSqlQuery sub_query(database);
                 sub_query.exec(subOrder);
             }
         }

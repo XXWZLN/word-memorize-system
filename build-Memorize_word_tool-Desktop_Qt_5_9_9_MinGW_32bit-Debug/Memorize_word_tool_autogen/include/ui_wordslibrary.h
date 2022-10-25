@@ -33,6 +33,7 @@ public:
     QLineEdit *search_word;
     QPushButton *Import;
     QComboBox *comboBox;
+    QLineEdit *add_input;
 
     void setupUi(QWidget *wordslibrary)
     {
@@ -47,22 +48,25 @@ public:
         tableView->setGeometry(QRect(40, 110, 581, 331));
         add = new QPushButton(wordslibrary);
         add->setObjectName(QStringLiteral("add"));
-        add->setGeometry(QRect(660, 120, 112, 34));
+        add->setGeometry(QRect(660, 180, 112, 34));
         Delete = new QPushButton(wordslibrary);
         Delete->setObjectName(QStringLiteral("Delete"));
-        Delete->setGeometry(QRect(660, 180, 112, 34));
+        Delete->setGeometry(QRect(660, 240, 112, 34));
         memory = new QPushButton(wordslibrary);
         memory->setObjectName(QStringLiteral("memory"));
-        memory->setGeometry(QRect(650, 250, 112, 34));
+        memory->setGeometry(QRect(650, 310, 112, 34));
         search_word = new QLineEdit(wordslibrary);
         search_word->setObjectName(QStringLiteral("search_word"));
-        search_word->setGeometry(QRect(630, 330, 181, 25));
+        search_word->setGeometry(QRect(630, 390, 181, 25));
         Import = new QPushButton(wordslibrary);
         Import->setObjectName(QStringLiteral("Import"));
-        Import->setGeometry(QRect(660, 380, 112, 34));
+        Import->setGeometry(QRect(660, 440, 112, 34));
         comboBox = new QComboBox(wordslibrary);
         comboBox->setObjectName(QStringLiteral("comboBox"));
         comboBox->setGeometry(QRect(70, 70, 121, 24));
+        add_input = new QLineEdit(wordslibrary);
+        add_input->setObjectName(QStringLiteral("add_input"));
+        add_input->setGeometry(QRect(650, 130, 181, 25));
 
         retranslateUi(wordslibrary);
 

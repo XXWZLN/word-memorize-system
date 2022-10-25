@@ -44,8 +44,20 @@ void wordslibrary::on_signOut_clicked()
 
 void wordslibrary::on_add_clicked()
 {
-    QString insert = QString("insert into '%1' values (null,null,1,null,null)").arg(sign_in_account);
-    sql_query.exec(insert);
+//    QString insert = QString("insert into '%1' values (null,null,0,0,null,null,null,0,0)").arg(sign_in_account);
+//    sql_query.exec(insert);
+//    mymodel->MySelect(myselect);
+    QString add_text = ui->add_input->text();
+    QString order = QString("select * from dictionary where word='%2'").arg(add_text);
+    sql_query.exec(order);
+    sql_query.first();
+    auto a0 = sql_query.value(0).toString();
+    auto a1 = sql_query.value(1).toString();
+    auto a2 = sql_query.value(2).toString();
+    auto a3 = sql_query.value(3).toString();
+    auto a4 = sql_query.value(4).toString();
+    order = QString("insert into '%1' values ('%2','%3','0','0','%6','%7','%8','0','0')").arg(sign_in_account).arg(a0).arg(a1).arg(a2).arg(a3).arg(a4);
+    sql_query.exec(order);
     mymodel->MySelect(myselect);
 }
 
@@ -100,8 +112,21 @@ void wordslibrary::on_comboBox_currentIndexChanged(const QString &arg1)
 
 void wordslibrary::on_Import_clicked()
 {
-    QString import = QString("insert into %1 select * from hello").arg(sign_in_account);
-    sql_query.exec(import);
+    QString order = QString("select * from dictionary");
+    sql_query.exec(order);
+    while (sql_query.next()) {
+        QString a1 = sql_query.value(0).toString();
+        QString a2 = sql_query.value(1).toString();
+        QString a3 = sql_query.value(2).toString();
+        QString a4 = sql_query.value(3).toString();
+        QString a5 = sql_query.value(4).toString();
+        QString import = QString("insert into '%1' values ('%2','%3','0','0','%6','%7','%8','0','0')").arg(sign_in_account).arg(a1).arg(a2).arg(a3).arg(a4).arg(a5);
+        QSqlQuery subQuery(database);
+        subQuery.exec(import);
+
+    }
+
+    //sql_query.exec(import);
     mymodel->MySelect(myselect);
 }
 
